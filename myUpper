@@ -1,0 +1,7 @@
+def myUpper(tmp):
+    tmpList = [ch.lower() for ch in tmp]
+    for ch in range(len(tmpList)):
+        tmpList[ch] = chr(ord(tmpList[ch])-32)
+    newStr = ''.join(tmpList)
+    
+    return(newStr)
